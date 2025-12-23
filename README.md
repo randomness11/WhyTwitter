@@ -22,11 +22,42 @@ A Chrome extension that adds psychological friction to Twitter/X by requiring yo
 
 ## Installation
 
-1. Clone or download this repo
-2. Open `chrome://extensions`
-3. Enable **Developer mode** (top right)
-4. Click **Load unpacked**
-5. Select the project folder
+### Step 1: Download the Extension
+```bash
+git clone https://github.com/yourusername/whytwitter.git
+```
+Or click **Code → Download ZIP** and extract it.
+
+#### Step 2: Open Chrome Extensions Page
+- Open Chrome and navigate to:
+  ```
+  chrome://extensions
+  ```
+- Or go to **⋮ Menu → Extensions → Manage Extensions**
+
+#### Step 3: Enable Developer Mode
+- Toggle the **Developer mode** switch in the top-right corner
+
+![Developer Mode Toggle](https://developer.chrome.com/static/docs/extensions/get-started/tutorial/hello-world/image/extensions-page-e702dd4555c1c.png)
+
+#### Step 4: Load the Extension
+1. Click **Load unpacked**
+2. Navigate to the downloaded/cloned folder
+3. Select the folder containing `manifest.json`
+4. Click **Select Folder**
+
+#### Step 5: Verify Installation
+- You should see **"Why Twitter?"** in your extensions list
+- The extension icon will appear in your toolbar
+- Try visiting `twitter.com` — you'll be blocked! 🎉
+
+---
+
+### Updating the Extension
+If you installed manually:
+1. Pull the latest changes or re-download
+2. Go to `chrome://extensions`
+3. Click the **↻ refresh** icon on the extension card
 
 ## Files
 

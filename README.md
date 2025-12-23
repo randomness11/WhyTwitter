@@ -1,81 +1,57 @@
 # Why Twitter?
 
-A Chrome extension that adds psychological friction to Twitter/X by requiring you to state your intention before accessing it.
+**Add intention to your scrolling.**
 
-![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-green) ![Manifest V3](https://img.shields.io/badge/Manifest-V3-blue)
+Why Twitter? is a simple Chrome extension designed to break the cycle of mindless scrolling. Instead of immediately loading your feed, it pauses the experience and asks one simple question: *"Why are you here?"*
 
-## How It Works
-
-1. Navigate to `twitter.com` or `x.com` → **Blocked**
-2. Type why you're opening Twitter (5+ characters)
-3. Access granted for **5 minutes** in **that tab only**
-4. After 5 minutes → automatically blocked again
-5. New tab = new reason required
+By requiring you to type out your intention, it adds just enough friction to turn an impulsive click into a conscious choice.
 
 ## Features
 
-- 🚫 Blocks Twitter/X until you state your reason
-- ⏱️ 5-minute per-tab access limit (enforced)
-- 📝 Logs all your reasons locally
-- 🔒 No data collected, no external requests
-- 🎨 Matches X's official design language
+- **Intentional Browsing:** Blocks Twitter/X by default until you state your purpose.
+- **Time-Boxed Access:** Grants 5 minutes of access per tab after you enter a reason.
+- **Privacy-First:** All data (including your reasons) is stored locally on your device. Nothing is sent to external servers.
+- **Seamless Design:** Clean UI that feels like a native part of the platform.
 
 ## Installation
 
-### Step 1: Download the Extension
-```bash
-git clone https://github.com/yourusername/whytwitter.git
-```
-Or click **Code → Download ZIP** and extract it.
+Since this extension is not in the Chrome Web Store, you can install it manually using Chrome's Developer Mode.
 
-#### Step 2: Open Chrome Extensions Page
-- Open Chrome and navigate to:
-  ```
-  chrome://extensions
-  ```
-- Or go to **⋮ Menu → Extensions → Manage Extensions**
+1.  **Download the Code:**
+    -   If you use Git: 
+    
+        ```bash
+         git clone https://github.com/randomness11/whytwitter.git
+        ```
+    -   Or download the [ZIP file](https://github.com/randomness11/whytwitter/archive/refs/heads/main.zip) and extract it to a folder.
 
-#### Step 3: Enable Developer Mode
-- Toggle the **Developer mode** switch in the top-right corner
+2.  **Open Chrome Extensions:**
+    -   Type `chrome://extensions` in your address bar and press Enter.
 
-![Developer Mode Toggle](https://developer.chrome.com/static/docs/extensions/get-started/tutorial/hello-world/image/extensions-page-e702dd4555c1c.png)
+3.  **Enable Developer Mode:**
+    -   Toggle the **Developer mode** switch in the top right corner of the page.
 
-#### Step 4: Load the Extension
-1. Click **Load unpacked**
-2. Navigate to the downloaded/cloned folder
-3. Select the folder containing `manifest.json`
-4. Click **Select Folder**
+4.  **Load the Extension:**
+    -   Click the **Load unpacked** button (top left).
+    -   Select the folder where you downloaded/extracted the code.
 
-#### Step 5: Verify Installation
-- You should see **"Why Twitter?"** in your extensions list
-- The extension icon will appear in your toolbar
-- Try visiting `twitter.com` — you'll be blocked! 🎉
+5.  **Done:** The extension is now active. Try visiting `twitter.com` or `x.com` to see it in action.
 
----
+## Updating
 
-### Updating the Extension
-If you installed manually:
-1. Pull the latest changes or re-download
-2. Go to `chrome://extensions`
-3. Click the **↻ refresh** icon on the extension card
+To get the latest features or fixes, follow these steps based on how you installed it:
 
-## Files
+**If you used Git:**
+1.  Open your terminal in the project folder and run:
+    ```bash
+    git pull
+    ```
+2.  Go to `chrome://extensions`, find "Why Twitter?", and click the refresh icon (↻).
 
-| File | Purpose |
-|------|---------|
-| `manifest.json` | Extension config (Manifest V3) |
-| `background.js` | Service worker — intercepts navigation, manages timers |
-| `block.html` | Block page UI |
-| `block.js` | Input validation and messaging |
-| `icon.svg` | Source icon |
-| `icon128.png` | Extension icon (128x128) |
-
-## Privacy
-
-- All data stored locally via `chrome.storage.local`
-- Reasons never leave your browser
-- No analytics, no tracking, no external requests
+**If you downloaded the ZIP:**
+1.  Download the latest ZIP and extract it (replace the old folder).
+2.  Go to `chrome://extensions` and click the refresh icon (↻) on the extension card.
 
 ## License
 
-MIT
+This project is open source and available under the [MIT License](LICENSE).

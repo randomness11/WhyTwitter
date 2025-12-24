@@ -24,7 +24,7 @@ A Chrome extension that adds psychological friction to Twitter/X by requiring yo
 
 ### Step 1: Download the Extension
 ```bash
-git clone https://github.com/yourusername/whytwitter.git
+git clone https://github.com/randomness11/whytwitter.git
 ```
 Or click **Code → Download ZIP** and extract it.
 
